@@ -160,6 +160,7 @@ GEM
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
       rack-test (>= 0.5.3)
+    will_paginate (3.0.5)
 
 PLATFORMS
   ruby
@@ -184,3 +185,4 @@ DEPENDENCIES
   uglifier (~> 1.0.3)
   user_authentication (= 0.1.4)
   webrat (~> 0.7.3)
+  will_paginate (= 3.0.5)

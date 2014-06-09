@@ -1,0 +1,9 @@
+= link_to_if @questions.previous_page,  "Previous", params.merge(page: @questions.previous_page)
+= link_to_if @questions.next_page,  "Next", params.merge(page: @questions.next_page)
+
+- @questions.each do |record|
+  .record
+    - Question.columns_hash.select { |name| name != "id" }.each_pair do |name, attr|
+      .field
+        .name= attr.human_name
+        .value= record.send name

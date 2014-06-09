@@ -1,0 +1,10 @@
+= form_for Question.new do |form|
+  - Question.columns_hash.select { |name| name != "id" }.each_pair do |name, attr|
+    .field
+      .name= form.label name
+      .value
+        - if attr.type == :string && attr.limit <= 32
+          = form.text_field name
+        - elsif attr.type == :string
+          = form.text_area name, cols: 32, rows: [4, (attr.limit/32).ceil].min
+  = form.submit

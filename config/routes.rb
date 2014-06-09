@@ -51,6 +51,14 @@ Product::Application.routes.draw do
   root :to => "site#root"
   match "/home", to: "users#home", via: :get
 
+  match "/questions", to: "questions#index", via: :get, as: "questions"
+  match "/questions", to: "questions#do_create", via: :post
+  match "/questions/new", to: "questions#new", via: :get, as: "new_question"
+  match "/questions/:id", to: "questions#show", via: :get, as: "question"
+  match "/questions/:id", to: "questions#do_update", via: :put
+  match "/questions/:id", to: "questions#do_delete", via: :delete
+  match "/questions/:id/edit", to: "questions#edit", via: :get, as: "edit_question"
+
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.

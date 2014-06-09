@@ -1,0 +1,4 @@
+- Question.columns_hash.select { |name| name != "id" }.each_pair do |name, attr|
+  .field
+    .name= attr.human_name
+    .value= @question.send name
