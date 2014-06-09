@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "globals", "~> 0.1.4"
 gem "haml", "~> 3.1.4"
+gem "haml-rails", "~> 0.4"
 gem "jquery-rails", "~> 2.2.1"
 gem "json", "~> 1.7.7"
 gem "mysql2", "~> 0.3.11"
