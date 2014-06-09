@@ -1,0 +1,18 @@
+.header {
+  border: {
+    color: black;
+    style: solid;
+    width: 0 0 1px 0;
+  }
+  clear: both;
+
+  .content {
+    margin: 0 auto; // Center horizontally and vertically.
+    overflow: hidden; // Include heights of floated children.
+    max-width: 800px;
+
+    .logout {
+      float: right;
+    }
+  }
+}

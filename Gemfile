@@ -6,6 +6,7 @@ gem "jquery-rails", "~> 2.2.1"
 gem "json", "~> 1.7.7"
 gem "mysql2", "~> 0.3.11"
 gem "rails", "3.2.12"
+gem "user_authentication", "0.1.4"
 
 # Gems used only for assets and not required
 # in production environments by default.
