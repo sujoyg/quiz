@@ -11,7 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140609044831) do
+ActiveRecord::Schema.define(:version => 20140609054706) do
+
+  create_table "questions", :force => true do |t|
+    t.string "statement", :limit => 1024, :null => false
+    t.string "answer",                    :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",           :null => false
