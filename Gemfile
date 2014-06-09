@@ -19,7 +19,7 @@ end
 group :development do
   gem "capistrano", "~> 2.14.0"
   gem "factory_girl_rails", "~> 4.0"
-  gem "rspec-rails", "~> 3.0.0.beta2"
+  gem "rspec-rails", "3.0.0"
   gem "webrat", "~> 0.7.3"
 end
 
@@ -30,6 +30,6 @@ end
 group :test do
   gem "fakefs", :require => "fakefs/safe"
   gem "specstar-controllers", "~> 0.0.8"
-  gem "specstar-models", "~> 0.1.2"
+  gem "specstar-models", "0.2.0"
   gem "specstar-support-random", "~> 0.1.0"
 end
