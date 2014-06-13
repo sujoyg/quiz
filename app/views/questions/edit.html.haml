@@ -1,3 +1,5 @@
+- set_javascript "questions"
+
 = form_for @question do |form|
   - Question.columns_hash.select { |name| name != "id" }.each_pair do |name, attr|
     .field
