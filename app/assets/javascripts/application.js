@@ -13,3 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require init
+//= require ckeditor/ckeditor
+//= require ckeditor/adapters/jquery
